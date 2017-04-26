@@ -1,0 +1,56 @@
+  
+
+Passo 1: No build.gradle Module: app 
+(Adiciona antes das dependencies)
+
+packagingOptions{
+        exclude'META-INF/LICENSE'
+        exclude'META-INF/LICENSE-FIREBASE.txt'
+        exclude'META-INF/NOTICE'
+    }
+
+
+Passo 2: Dentro do build.gradle Module, adiciona nas dependencies o codigo abaixo:
+
+compile 'com.google.firebase:firebase-messaging:10.2.1'
+compile 'com.firebase:firebase-client-android:2.3.1'
+
+
+Passo 3: Na aba build.gradle Project 
+classpath 'com.google.gms:google-services:3.0.0'
+
+
+
+Passo 4: No arquivo AndroidManifest.xml adiciona a permissão pra internet
+<uses-permission android:name="android.permission.INTERNET"/>
+
+
+Passo 5: No método onCreate da Activity: (Precisamos de um Context)
+
+   @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Firebase.setAndroidContext(this); // Context criado
+
+
+Passo 6: 
+
+No MainActivity instanciar o Firebase
+
+Firebase firebase = new Firebase("https://nomeDoMeuProjeto.firebaseio.com/");
+projetofirebaseandroid
+
+
+Passo 7: Cria um projeto no site do FireBase e insere o nome do seu pacote na criação e ok. 
+
+
+Passo 8: Depois é preciso baixar um arquivo do tipo json e adiciona-lo no projeto do android studio na aba app.
+
+Passo 9: Dentro da build.gradle Module: APP
+Insere no final de todo o codigo
+apply plugin: 'com.google.gms.google-services'
+
+Passo 10: No Android Studio, clique em “Sync now” para sincronizar o projeto com o FireBase.
+
+Passo 11: Tornar publico o acesso ao projeto no site do firebase.

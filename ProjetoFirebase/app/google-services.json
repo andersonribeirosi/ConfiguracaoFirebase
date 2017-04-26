@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "222011609817",
+    "firebase_url": "https://fir-34be9.firebaseio.com",
+    "project_id": "fir-34be9",
+    "storage_bucket": "fir-34be9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222011609817:android:d41bf1afdbc72337",
+        "android_client_info": {
+          "package_name": "firebase.elfrarep.cursoandroid.com.projetofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222011609817-jvrv1ru7uhb65grmpf4p4v4jj2darbea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcxqIop28yQil94PzgLtQREoKsM-iMt_g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
